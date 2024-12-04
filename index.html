@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Otomasi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: #55829e;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 40px;
+            margin: 10px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #55829e;
+            color: #ffffff;
+        }
+
+        .materi-btn {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            padding: 5px 10px;
+            border: none;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .materi-btn:hover {
+            background-color: #55829e;
+        }
+
+        /* Style untuk Kontak ID Card */
+        #kontak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .contact-card {
+            background: #ebf0f0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #55829e(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .contact-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .contact-card h3 {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #333;
+        }
+
+        .contact-card p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .contact-card a {
+            text-decoration: none;
+            color: #55829e;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .contact-card a:hover {
+            color: #3b6b7b;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BELAJAR OTOMASI</h1>
+        <h3>Selamat Datang di Belajar Otomasi</h3>
+        <h3>"Otomasi Penuh Aksi"</h3>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#materi">Materi</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="tentang">
+        <h2>Tentang Otomasi</h2>
+        <p>Otomasi adalah proses yang dilakukan secara otomatis tanpa atau dengan bantuan manusia. Otomasi menggunakan teknologi, seperti mesin, sistem kontrol, dan teknologi informasi, untuk mengoperasikan dan menjalankan suatu kegiatan. </p>
+    </section>
+
+    <section id="materi">
+        <h2>Materi Belajar</h2>
+        <br><a href="pengantar.html" class="materi-btn">Pengantar Otomasi</a><br/>
+        <br><a href="alat.html" class="materi-btn">Alat dan Teknologi Otomasi</a></br>
+        <br><a href="penerapan.html" class="materi-btn">Penerapan Otomasi dalam Industri</a></br>
+    </section>
+
+   <!-- Kontak Kami sebagai ID Card -->
+<section id="kontak">
+    <h2>Contact Person</h2>
+    <div class="contact-card">
+        <img src="img/w .jpg" alt="Foto Profil">
+        <h3>Alif Dimas Mahardika</h3>
+        <h4>NRP: 3124510024</h4>
+        <p>Email: <a href="mailto:dikamahar577@gmail.com" target="_blank">dikamahar577@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/+6285256100811" target="_blank">0852-5610-0811</a></p>
+        <p>Instagram: <a href="https://instagram.com/_alif.dimas" target="_blank">@_alif.dimas</a></p>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Belajar Otomasi. Alif Dimas Mahardika/3124510024.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Terima kasih, pesan Anda telah dikirim!');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
